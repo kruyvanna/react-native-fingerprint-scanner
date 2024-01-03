@@ -49,6 +49,7 @@ android {
     sourceSets {
       main {
         manifest.srcFile "src/main/AndroidManifestNew.xml"
+        jniLibs.srcDirs = ['libs']
       }
     }
   }
@@ -106,6 +107,7 @@ dependencies {
   //noinspection GradleDynamicVersion
   implementation "com.facebook.react:react-native:+"
   implementation "org.jetbrains.kotlin:kotlin-stdlib:$kotlin_version"
+  implementation fileTree(dir: "libs", include: ["*.jar"])
 }
 
 if (isNewArchitectureEnabled()) {

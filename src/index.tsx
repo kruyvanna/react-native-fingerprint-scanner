@@ -1,5 +1,13 @@
 const FingerprintScanner = require('./NativeFingerprintScanner').default;
 
-export function multiply(a: number, b: number): number {
-  return FingerprintScanner.multiply(a, b);
+export function setup(): void {
+  FingerprintScanner.setup();
+}
+
+export function connectDevice(): void {
+  FingerprintScanner.connectDevice();
+}
+
+export function disconnectDevice(): number {
+  return FingerprintScanner.disconnectDevice();
 }
