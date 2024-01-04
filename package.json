@@ -1,6 +1,6 @@
 {
   "name": "react-native-zk-fingerprint-scanner",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "A library to connect to ZK fingerprint scanner",
   "main": "lib/commonjs/index",
   "module": "lib/module/index",
