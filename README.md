@@ -12,28 +12,28 @@ npm install react-native-zk-fingerprint-scanner
 
 ```js
 import * as React from 'react';
-import { StyleSheet, View, Text, Button, Image } from 'react-native';
+import {StyleSheet, View, Text, Button, Image} from 'react-native';
 import {
   setup,
   connectDevice,
   disconnectDevice,
 } from 'react-native-zk-fingerprint-scanner';
-import { DeviceEventEmitter } from 'react-native';
+import {DeviceEventEmitter} from 'react-native';
 
 export default function App() {
-  const [image, setImage] = (React.useState < string) | (undefined > undefined);
-  const [isConnected, setIsConnected] = React.useState < boolean > false;
+  const [image, setImage] = React.useState<string>();
+  const [isConnected, setIsConnected] = React.useState<boolean>(false);
 
   React.useEffect(() => {
-    DeviceEventEmitter.addListener('onDeviceConnected', (e) => {
+    DeviceEventEmitter.addListener('onDeviceConnected', e => {
       setIsConnected(true);
     });
 
-    DeviceEventEmitter.addListener('onDeviceDisconnected', (e) => {
+    DeviceEventEmitter.addListener('onDeviceDisconnected', e => {
       setIsConnected(false);
     });
 
-    DeviceEventEmitter.addListener('onGotImage', (e) => {
+    DeviceEventEmitter.addListener('onGotImage', e => {
       setImage(e);
     });
   }, []);
@@ -41,8 +41,8 @@ export default function App() {
   return (
     <View style={styles.container}>
       <Image
-        source={{ uri: `data:image/png;base64,${image}` }}
-        style={{ width: 100, height: 100, backgroundColor: 'blue' }}
+        source={{uri: `data:image/png;base64,${image}`}}
+        style={{width: 100, height: 100, backgroundColor: 'blue'}}
       />
       <Text>Connected: {isConnected ? 'Yes' : 'No'}</Text>
 
@@ -50,20 +50,17 @@ export default function App() {
         title="Setup"
         onPress={() => {
           setup();
-        }}
-      ></Button>
+        }}></Button>
       <Button
         title="Connect device"
         onPress={async () => {
           connectDevice();
-        }}
-      ></Button>
+        }}></Button>
       <Button
         title="Disconnect"
         onPress={async () => {
           disconnectDevice();
-        }}
-      ></Button>
+        }}></Button>
     </View>
   );
 }
@@ -76,6 +73,7 @@ const styles = StyleSheet.create({
     gap: 20,
   },
 });
+
 ```
 
 ## Contributing
