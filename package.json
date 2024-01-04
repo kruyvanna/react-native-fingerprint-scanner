@@ -1,7 +1,7 @@
 {
-  "name": "react-native-fingerprint-scanner",
+  "name": "react-native-zk-fingerprint-scanner",
   "version": "0.1.0",
-  "description": "A library to connect to fingerprint scanner",
+  "description": "A library to connect to ZK fingerprint scanner",
   "main": "lib/commonjs/index",
   "module": "lib/module/index",
   "types": "lib/typescript/src/index.d.ts",
@@ -43,7 +43,7 @@
     "type": "git",
     "url": "git+https://github.com/kruyvanna/react-native-fingerprint-scanner.git"
   },
-  "author": "Kruy Vanna <kruyvanna@gmail.com> (https://github.com/kruyvanna)",
+  "author": "Kruy Vanna <kruyvanna.io@gmail.com> (https://github.com/kruyvanna)",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/kruyvanna/react-native-fingerprint-scanner/issues"

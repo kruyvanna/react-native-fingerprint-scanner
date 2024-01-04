@@ -5,7 +5,7 @@ import {
   setup,
   connectDevice,
   disconnectDevice,
-} from 'react-native-fingerprint-scanner';
+} from 'react-native-zk-fingerprint-scanner';
 import { DeviceEventEmitter } from 'react-native';
 
 export default function App() {

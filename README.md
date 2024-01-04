@@ -1,11 +1,11 @@
-# react-native-fingerprint-scanner
+# react-native-zk-fingerprint-scanner
 
 Des
 
 ## Installation
 
 ```sh
-npm install react-native-fingerprint-scanner
+npm install react-native-zk-fingerprint-scanner
 ```
 
 ## Usage
@@ -17,7 +17,7 @@ import {
   setup,
   connectDevice,
   disconnectDevice,
-} from 'react-native-fingerprint-scanner';
+} from 'react-native-zk-fingerprint-scanner';
 import { DeviceEventEmitter } from 'react-native';
 
 export default function App() {

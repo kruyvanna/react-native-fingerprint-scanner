@@ -10939,9 +10939,9 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"react-native-fingerprint-scanner@workspace:.":
+"react-native-zk-fingerprint-scanner@workspace:.":
   version: 0.0.0-use.local
-  resolution: "react-native-fingerprint-scanner@workspace:."
+  resolution: "react-native-zk-fingerprint-scanner@workspace:."
   dependencies:
     "@commitlint/config-conventional": ^17.0.2
     "@evilmartians/lefthook": ^1.5.0
