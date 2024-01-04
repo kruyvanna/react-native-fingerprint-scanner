@@ -1,11 +1,29 @@
 # react-native-zk-fingerprint-scanner
 
-Des
+This library let you connect to ZK Fingerprint scanner in your react-native app.
+This library is only for Android platform.
 
 ## Installation
 
 ```sh
 npm install react-native-zk-fingerprint-scanner
+```
+
+## Target SDK version
+
+Change target sdk version to 33 in /android/build.gradle
+
+## New architecture
+
+Set newArchEnabled=true in /android/gradle.properties
+
+## Generate schema
+
+Cd to /android and run
+
+```
+./gradlew generateCodegenArtifactsFromSchema
+
 ```
 
 ## Usage
