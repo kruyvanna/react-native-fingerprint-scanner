@@ -101,13 +101,7 @@ class FingerprintScannerModule(reactContext: ReactApplicationContext) :
       }
 
       override fun extractOK(fpTemplate: ByteArray) {
-//                if(currentTabIndex == 0) {
-//                    val quality = ZKFingerService.getTemplateQuality(fpTemplate)
-//                    Log.i(TAG, "extractOK quality=$quality")
-//                    if(quality > 80) {
-//                        scanViewModel.onReceiveFingerprintTemplate(fpTemplate)
-//                    }
-//                }
+
       }
 
       override fun extractError(i: Int) {
@@ -115,6 +109,7 @@ class FingerprintScannerModule(reactContext: ReactApplicationContext) :
         Log.i(TAG, "extractError $i")
       }
     }
+    
   private val fingerprintExceptionListener = FingerprintExceptionListener {
     LogHelper.e("[] usb exception!!!")
     if (!isReseted) {
